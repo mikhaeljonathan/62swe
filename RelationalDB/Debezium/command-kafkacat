@@ -1,0 +1,8 @@
+docker run --tty \
+--network debezium_default \
+--platform=linux/amd64 \
+confluentinc/cp-kafkacat \
+kafkacat -b kafka:9092 -C \
+-s key=s -s value=avro \
+-r http://schema-registry:8081 \
+-t postgres.public.student

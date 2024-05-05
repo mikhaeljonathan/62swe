@@ -1,0 +1,11 @@
+CREATE TABLE student(
+	id integer primary key,
+	name varchar
+)
+
+ALTER TABLE public.student REPLICA IDENTITY FULL
+
+select * from student
+
+INSERT INTO student (id, name) values (1, 'bob')
+
