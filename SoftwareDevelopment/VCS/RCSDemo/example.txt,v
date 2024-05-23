@@ -1,0 +1,41 @@
+head	1.2;
+access;
+symbols;
+locks
+	mj:1.1; strict;
+comment	@# @;
+
+
+1.2
+date	2024.05.15.06.16.56;	author mj;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2024.05.15.06.16.09;	author mj;	state Exp;
+branches;
+next	;
+
+
+desc
+@initial commit
+@
+
+
+1.2
+log
+@first revision
+@
+text
+@Initial content
+First revision
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 1
+@
