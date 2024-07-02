@@ -1,0 +1,4 @@
+application.properties
+target/
+.env
+node_modules/
