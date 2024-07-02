@@ -1,0 +1,19 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.red {
+  color: red;
+}
+
+.bgwhite {
+  background-color: white;
+}
+
+/* ul {
+  list-style-type:circle;
+} */
+
+table, th, td {
+  border: 1px solid black;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="/Users/mj/Documents/apapun.css">
+        <link rel="icon" href="icon.jpg">
+    </head>
+    <body>
+        <h1 class=pinky>My First Heading</h1>
+        <p>My first <br> paragraph</p>
+        <h2 style="color: yellow; font-size: 0.5rem">My second heading</h2>
+        <a href="#table">link to <ins>google</ins></a>
+        <h1 class="red bgwhite">My third heading</h1>
+        <ol>
+        <li><a href="https://starbucks.com">Coffee</a></li>
+        <li class="=red bgwhite">Tea</li>
+        <li id="milk">Milk</li>
+        </ol>
+        <table id="table">
+            <tr>
+                <th>Kode saham</th>
+                <th>Harga</th>
+                <th>Ranking market cap</th>
+            </tr>
+            <tr>
+                <td>BBCA</td>
+                <td class="red bgwhite">9000</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>BREN</td>
+                <td class="pinky">7000</td>
+                <td>2</td>
+            </tr>
+        </table>
+        <a href="https://youtube.com">youtube</a>
+        <img src="../meme.png" width="400" height="600"" alt="ini adalah gambar meme">
+        <form>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname">
+        </form>
+        <script>
+            function myFunction() {
+                var x = document.getElementsByClassName("pinky");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.color = "pink";
+                }
+            }
+
+            myFunction();
+        </script>
+    </body>
+</html>
