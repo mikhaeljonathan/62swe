@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="MyService"
+  targetNamespace="http://www.example.org/MyService/"
+  xmlns:tns="http://www.example.org/MyService/"
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+  <message name="MyFunctionRequest">
+    <part name="name" type="xsd:string"/>
+  </message>
+  
+  <message name="MyFunctionResponse">
+    <part name="message" type="xsd:string"/>
+  </message>
+
+  <portType name="MyPortType">
+    <operation name="MyFunction">
+      <input message="tns:MyFunctionRequest"/>
+      <output message="tns:MyFunctionResponse"/>
+    </operation>
+  </portType>
+
+  <binding name="MyBinding" type="tns:MyPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="MyFunction">
+      <soap:operation soapAction="http://www.example.org/MyService/MyFunction"/>
+      <input>
+        <soap:body use="encoded" namespace="http://www.example.org/ExampleService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="http://www.example.org/ExampleService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </output>
+    </operation>
+  </binding>
+
+  <service name="MyService">
+    <port name="MyPort" binding="tns:MyBinding">
+      <soap:address location="http://localhost:3000/wsdl"/>
+    </port>
+  </service>
+</definitions>
+
