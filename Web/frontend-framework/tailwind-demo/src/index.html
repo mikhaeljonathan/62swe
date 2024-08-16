@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="p-4 m-4 bg-blue-500 text-white">
+    This is tailwind box
+  </div>
+
+  <div class="p-4 bg-blue-500 md:bg-green-500 lg:bg-red-500">
+    This box changes color based on the screen size.
+  </div>
+
+  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    Hover me
+  </button>
+  
+  <div class="bg-white dark:bg-gray-900">
+    <p class="text-gray-900 dark:text-gray-100">Dark Mode Text</p>
+  </div>
+  
+
+  <div class="flex space-x-4">
+    <div class="p-4 bg-blue-500">Item 1</div>
+    <div class="p-4 bg-green-500">Item 2</div>
+    <div class="p-4 bg-red-500">Item 3</div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-4">
+    <div class="p-4 bg-blue-500">Item 1</div>
+    <div class="p-4 bg-green-500">Item 2</div>
+    <div class="p-4 bg-red-500">Item 3</div>
+  </div>
+</body>
+</html>
