@@ -1,0 +1,43 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #933600;
+  background-color: #ff9f67;
+}
+
+.container p {
+  color: blue;
+}
+
+.square {
+  width: 400px;
+  height: 200px;
+  background-color: antiquewhite;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.square:hover {
+  background-color: red;
+}
+
+.message, .warning, .error, .success {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
