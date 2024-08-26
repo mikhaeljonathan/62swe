@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "00dd7f47-78fa-437a-9f41-76ec885cd005",
+		"name": "Kilogram DEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15203717"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"username\", \"prabowo\")",
+							"pm.environment.set(\"password\", \"prabowo\")",
+							"",
+							"console.log(\"Username and password saved for login\");"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"User is created\", function () {",
+							"    pm.response.to.have.status(201)",
+							"});",
+							"",
+							"const cookieJar = pm.cookies;",
+							"console.log(cookieJar);",
+							"",
+							"pm.test(\"Session cookie exists\", function () {",
+							"    pm.expect(cookieJar.has('sessionId')).to.be.true;",
+							"});",
+							"",
+							"const sessionCookie = cookieJar.get('sessionId');",
+							"",
+							"console.log(\"Session cookie value:\", sessionCookie);",
+							"",
+							"if (sessionCookie) {",
+							"    pm.environment.set(\"sessionId\", sessionCookie);",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Log In",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"User is logged in\", function () {",
+							"    pm.response.to.have.status(200)",
+							"});",
+							"",
+							"const cookieJar = pm.cookies;",
+							"console.log(cookieJar);",
+							"",
+							"pm.test(\"Session cookie exists\", function () {",
+							"    pm.expect(cookieJar.has('sessionId')).to.be.true;",
+							"});",
+							"",
+							"const sessionCookie = cookieJar.get('sessionId');",
+							"",
+							"console.log(\"Session cookie value:\", sessionCookie);",
+							"",
+							"if (sessionCookie) {",
+							"    pm.environment.set(\"sessionId\", sessionCookie);",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\"\n}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Content",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Content is shown\", function () {",
+							"    pm.response.to.have.status(200)",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/content"
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up Duplicate",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"User has already existed\", function () {",
+							"    pm.response.to.have.status(400)",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Log In Failed",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Login failed\", function () {",
+							"    pm.response.to.have.status(401)",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"salah\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Log Out",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Logged out\", function () {",
+							"    pm.response.to.have.status(200)",
+							"});",
+							"",
+							"const setCookieHeader = pm.response.headers.get('Set-Cookie');",
+							"",
+							"pm.test(\"Session ID cookie is cleared\", function () {",
+							"    pm.expect(setCookieHeader).to.include(\"sessionId\");",
+							"    pm.expect(setCookieHeader).to.include(\"Expires=Thu, 01 Jan 1970 00:00:00 GMT\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Content Failed",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Content isn't shown\", function () {",
+							"    pm.response.to.have.status(400)",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/content"
+			},
+			"response": []
+		},
+		{
+			"name": "Log Out Failed",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Logged out\", function () {",
+							"    pm.response.to.have.status(400)",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/logout"
+			},
+			"response": []
+		}
+	]
+}
