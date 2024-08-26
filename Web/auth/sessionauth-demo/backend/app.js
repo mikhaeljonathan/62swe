@@ -76,17 +76,12 @@ app.post('/signup', async (req, res) => {
 
     const query = 'SELECT * FROM users WHERE username = $1';
     const queryValues = [username];
-    postGresClient.query(query, queryValues, async (err, result) => {
-        if (err) {
-            res.status(500).send(err);
-            return;
-        }
+    const postgresResult = await postGresClient.query(query, queryValues);
 
-        if (result.rows.length > 0) {
-            res.status(400).send('Username already exists');
-            return;
-        }
-    });
+    if (postgresResult.rows.length > 0) {
+        res.status(400).send('Username already exists');
+        return;
+    }
 
     const insertQuery = 'INSERT INTO users (username, password) VALUES ($1, $2)';
     const insertQueryValues = [username, hashedPassword];
