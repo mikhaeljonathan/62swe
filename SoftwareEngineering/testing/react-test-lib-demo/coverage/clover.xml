@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1724864135689" clover="3.2.0">
+  <project timestamp="1724864135689" name="All files">
+    <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3" elements="15" coveredelements="13" complexity="0" loc="10" ncloc="10" packages="2" files="2" classes="2"/>
+    <package name="main">
+      <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="Post.tsx" path="/Users/mj/Documents/react-test-demo3/kilogram-vite/src/main/Post.tsx">
+        <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="navbar">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Navbar.tsx" path="/Users/mj/Documents/react-test-demo3/kilogram-vite/src/navbar/Navbar.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
