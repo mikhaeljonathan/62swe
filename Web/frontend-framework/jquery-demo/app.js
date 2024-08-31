@@ -15,7 +15,12 @@ $(document).ready(function() {
 
     $("#toggle-button").click(function() {
         // $('.grey').hide();
-        // $('.grey').show();   
-        $('.grey').toggle();
+        // $('.grey').show();
+        // $('.grey').toggle();
+        if ($('.grey').css('display') === 'none') {
+            $('.grey').fadeIn();
+        } else {
+            $('.grey').fadeOut();
+        }
     })
 })
