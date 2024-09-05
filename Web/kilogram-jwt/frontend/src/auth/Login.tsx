@@ -12,6 +12,10 @@ export default function Login() {
   useEffect(() => {
     const jwtToken = Cookies.get("token");
 
+    if (!jwtToken) {
+      return;
+    }
+
     fetch(`${import.meta.env.VITE_BACKEND_SERVER}/cookie/validation`, {
       credentials: "include",
       headers: {

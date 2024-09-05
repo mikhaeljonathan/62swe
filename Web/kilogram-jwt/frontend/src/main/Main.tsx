@@ -12,6 +12,11 @@ export default function Main() {
     useEffect(() => {
         const jwtToken = Cookies.get("token");
 
+        if (jwtToken === undefined) {
+            navigate("/login")
+            return;
+        }
+
         fetch(`${import.meta.env.VITE_BACKEND_SERVER}/posts`, {
             credentials: "include",
             headers: {

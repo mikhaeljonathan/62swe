@@ -84,7 +84,7 @@ app.post('/signup', async (req, res) => {
         }
 
         const token = jwt.sign({ username: username }, secretKey, { expiresIn: '1h' });
-        res.cookie('token', token, { httpOnly: true });
+        res.cookie('token', token);
         res.status(201).send('User created');
     });
 })
@@ -113,7 +113,7 @@ app.post('/login', async (req, res) => {
         }
         
         const token = jwt.sign({ username: username }, secretKey, { expiresIn: '1h' });
-        res.cookie('token', token, { httpOnly: true });
+        res.cookie('token', token);
         res.status(200).send('Login successful');
     })
 });
@@ -128,28 +128,15 @@ app.get("/content", (req, res) => {
     }
 })
 
+app.get('/logout', validateCookie);
+
 app.get('/logout', async (req, res) => {
-    const cookies = req.headers.cookie ? req.headers.cookie : "";
-    // split the cookies by ;
-    const cookieArray = cookies.split(';');
-
-    // search the cookieArray with the key = sessionId
-    let sessionId = '';
-    cookieArray.forEach(cookie => {
-        if (cookie.trim().startsWith('sessionId')) {
-            sessionId = cookie.split('=')[1];
-        }
-    });
-
-    if (sessionId === "") {
-        res.status(400).send('No session found');
-        return;
+    if (req.authenticated) {
+        res.clearCookie('token');
+        res.status(200).send('Session is valid')
+    } else {
+        res.status(400).send('JWT is not valid');
     }
-
-    await redisClient.del(sessionId);
-
-    res.clearCookie('sessionId');
-    res.status(200).send('Logged out');
 });
 
 app.listen(3000, () => {
