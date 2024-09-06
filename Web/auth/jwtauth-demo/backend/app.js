@@ -2,7 +2,6 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const { Client } = require('pg');
-const { v4: uuidv4 } = require('uuid');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
@@ -53,9 +52,9 @@ app.get('/cookie/validation', validateCookie);
 
 app.get('/cookie/validation', async (req, res) => {
     if (req.authenticated) {
-        res.status(200).send('Session is valid')
+        res.status(200).send('JWT is valid')
     } else {
-        res.status(400).send('Session is not valid');
+        res.status(400).send('JWT is not valid');
     }
 });
 

@@ -24,7 +24,7 @@ export default function Signup() {
         })
         .then((res) => { 
           if (res.status === 200) {
-            navigate("/feeds");
+            navigate("/content");
           }
         })
       }, [])

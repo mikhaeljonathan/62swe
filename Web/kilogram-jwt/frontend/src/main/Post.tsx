@@ -18,7 +18,7 @@ export default function Post({ post } : { post: Post }) {
             <img src={post.imageurl} className="h-72 my-4"></img>
             <img onClick={onLiked} src={likedIcon} className="inline cursor-pointer "/>
             <p className="inline mx-2">{post.likes}</p>
-            <p>Desc</p>
+            <p>{post.description}</p>
         </div>
     )
 }
