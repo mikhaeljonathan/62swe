@@ -1,0 +1,2 @@
+mvn package
+java -javaagent:../skywalking-agent.jar -Dskywalking.agent.service_name=skywalking-demo-1 -Dskywalking.collector.backend_service=34.132.168.204:11800 -jar target/skywalking-demo-0.0.1-SNAPSHOT.jar
