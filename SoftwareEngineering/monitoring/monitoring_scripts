@@ -1,0 +1,92 @@
+=== INSTALL PROMETHEUS ===
+wget https://github.com/prometheus/prometheus/releases/download/v2.54.1/prometheus-2.54.1.linux-amd64.tar.gz
+tar -zxf prometheus-2.54.1.linux-amd64.tar.gz
+cd prometheus-2.54.1.linux-amd64/
+vi prometheus.yml
+- targets: ["localhost:9091"]
+./prometheus --web.listen-address=:9091
+
+
+=== INSTALL NODE EXPORTER ===
+wget https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz
+tar -zxf node_exporter-1.8.2.linux-amd64.tar.gz
+cd node_exporter-1.8.2.linux-amd64/
+./node_exporter
+
+
+=== RECORDING RULES ===
+cd prometheus-2.54.1.linux-amd64/
+vi node_exporter_rules.yml
+groups:
+  - name: node_exporter_rules
+    rules:
+    - record: node:cpu_usage:avg5m
+      expr: 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+vi prometheus.yml
+rule_files:
+  - "node_exporter_rules.yml"
+
+
+=== ALERTING RULES ===
+cd prometheus-2.54.1.linux-amd64/
+vi node_exporter_alerts.yml
+groups:
+  - name: node_exporter_alerts
+    rules:
+    - alert: HighCPUUsage
+      expr: 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100) > 20
+      for: 1m
+      labels:
+        severity: critical
+      annotations:
+        summary: "High CPU usage detected on {{ $labels.instance }}"
+        description: "CPU usage is above 20% for more than 1 minute on instance {{ $labels.instance }}."
+vi prometheus.yml
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - localhost:9091
+rule_files:
+  - "node_exporter_rules.yml"
+  - "node_exporter_alerts.yml"
+
+
+=== STRESS TEST ===
+sudo apt-get install stress
+stress --cpu 4 --timeout 600
+
+
+=== INSTALL GRAFANA ===
+sudo apt-get install -y apt-transport-https software-properties-common wget
+sudo mkdir -p /etc/apt/keyrings/
+wget -q -O - https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+sudo apt-get update
+sudo apt-get install grafana
+sudo systemctl start grafana-server
+http://grafana-server:3000
+login with admin:admin
+
+
+=== INSTALL APACHE SKYWALKING ===
+wget https://dlcdn.apache.org/skywalking/10.0.1/apache-skywalking-apm-10.0.1.tar.gz
+tar –zxf apache-skywalking-apm-10.0.1.tar.gz
+sudo apt install default-jdk
+vi webapp/application.yaml
+serverPort: ${SW_SERVER_PORT:-8081}
+cd apache-skywalking-apm-bin/bin
+./startup.sh
+http://skywalking-server:8081
+
+
+=== INSTALL APACHE SKYWALKING AGENT ===
+Download https://dlcdn.apache.org/skywalking/java-agent/9.3.0/apache-skywalking-java-agent-9.3.0.tgz and extract
+Copy optional-plugins/apm-resttemplate-6.x-plugin-9.3.0.jar to plugins 
+(for 4 services) mvn package
+(for 4 services)
+java \
+-javaagent:/Users/mj/Documents/skywalking-agent/skywalking-agent.jar \
+-Dskywalking.agent.service_name=skywalking-demo-1 \
+-Dskywalking.collector.backend_service=34.132.168.204:11800 \
+-jar target/skywalking-demo-1-0.0.1-SNAPSHOT.jar
