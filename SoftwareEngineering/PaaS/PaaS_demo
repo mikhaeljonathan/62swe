@@ -1,0 +1,39 @@
+# create a new VM instance and open port for HTTP (80) and HTTPS (443)
+
+wget -NP . https://dokku.com/install/v0.34.8/bootstrap.sh
+sudo DOKKU_TAG=v0.34.8 bash bootstrap.sh
+
+# add ssh keys: ssh-keygen -t rsa -b 4096 in your local machine
+# copy the content of ~/.ssh/id_rsa.pub to clipboard
+echo {paste here} | sudo dokku ssh-keys:add admin
+
+dokku domains:set-global {external IP server}
+
+# go to your java application skywalking-demo-4 (/api/likensubs)
+git init
+git add .
+git commit -m "init"
+git remote add dokku dokku@{external IP server}:{your app name}
+git push dokku main
+# it will take some time, the app will be deployed in a random high port because we don't set the domain name
+# domain name used so we can directly point our app to port 80 or 443
+
+# verify the paas
+curl -v http://localhost:{random port}/api/likensubs
+dokku logs dokku-demo
+cd /home/dokku/dokku-demo
+sudo cat nginx.conf
+
+# check ip addresses
+ip a
+
+# enable firewall allow for the random high port
+# add dokku-node in network tags vm instance
+# go to vpc network > firewall in left menu GCP
+# add create firewall rule
+# name: dokku-allow
+# target tags: dokku-node
+# source ipv4: 0.0.0.0/0 (or you can configure it as you want)
+# protocol and ports: TCP, port 22,80,443,{your random port}
+
+http://{external ip server}:{random port}/api/likensubs

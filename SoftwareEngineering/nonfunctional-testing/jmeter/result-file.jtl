@@ -1,0 +1,361 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1727071272200,17,Kilogram posts,200,OK,Kilogram thread group 1-1,text,false,"The operation lasted too long: It took 17 milliseconds, but should not have lasted longer than 10 milliseconds.",823,192,1,1,http://localhost:3000/posts,16,0,10
+1727071272218,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,231,1,1,http://localhost:3000/login,2,0,0
+1727071272665,4,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,1,1,http://localhost:3000/posts,4,0,0
+1727071272670,3,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,1,1,http://localhost:3000/login,3,0,0
+1727071273160,4,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,1,1,http://localhost:3000/posts,4,0,0
+1727071273165,3,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,1,1,http://localhost:3000/login,3,0,0
+1727071273664,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,1,1,http://localhost:3000/posts,3,0,0
+1727071273667,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,231,1,1,http://localhost:3000/login,2,0,0
+1727071274153,6,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,2,2,http://localhost:3000/posts,6,0,2
+1727071274160,3,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,240,2,2,http://localhost:3000/login,3,0,0
+1727071274164,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,2,2,http://localhost:3000/posts,3,0,0
+1727071274167,3,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,2,2,http://localhost:3000/login,3,0,0
+1727071274655,3,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,2,2,http://localhost:3000/posts,3,0,0
+1727071274659,4,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,2,2,http://localhost:3000/login,4,0,0
+1727071274662,6,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,2,2,http://localhost:3000/posts,6,0,0
+1727071274668,3,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,2,2,http://localhost:3000/login,3,0,0
+1727071275155,3,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,2,2,http://localhost:3000/posts,3,0,0
+1727071275159,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,240,2,2,http://localhost:3000/login,2,0,0
+1727071275161,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,2,2,http://localhost:3000/posts,3,0,0
+1727071275164,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,231,2,2,http://localhost:3000/login,2,0,0
+1727071275654,3,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,2,2,http://localhost:3000/posts,3,0,0
+1727071275657,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,2,2,http://localhost:3000/login,2,0,0
+1727071275664,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,2,2,http://localhost:3000/posts,2,0,0
+1727071275667,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,2,2,http://localhost:3000/login,2,0,0
+1727071276146,4,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,3,3,http://localhost:3000/posts,4,0,1
+1727071276150,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,3,3,http://localhost:3000/login,3,0,0
+1727071276153,2,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,3,3,http://localhost:3000/posts,2,0,0
+1727071276156,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,3,3,http://localhost:3000/login,2,0,0
+1727071276161,1,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,3,3,http://localhost:3000/posts,1,0,0
+1727071276163,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,3,3,http://localhost:3000/login,1,0,0
+1727071276650,4,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,3,3,http://localhost:3000/posts,4,0,0
+1727071276654,2,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,3,3,http://localhost:3000/login,2,0,0
+1727071276655,2,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,3,3,http://localhost:3000/posts,2,0,0
+1727071276657,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,3,3,http://localhost:3000/login,1,0,0
+1727071276662,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,3,3,http://localhost:3000/posts,2,0,0
+1727071276665,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,3,3,http://localhost:3000/login,2,0,0
+1727071277150,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,3,3,http://localhost:3000/posts,3,0,0
+1727071277153,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,3,3,http://localhost:3000/login,3,0,0
+1727071277156,1,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,3,3,http://localhost:3000/posts,1,0,0
+1727071277158,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,3,3,http://localhost:3000/login,1,0,0
+1727071277163,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,3,3,http://localhost:3000/posts,2,0,0
+1727071277165,3,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,3,3,http://localhost:3000/login,3,0,0
+1727071277649,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,3,3,http://localhost:3000/posts,3,0,0
+1727071277653,2,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,3,3,http://localhost:3000/login,2,0,0
+1727071277656,2,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,3,3,http://localhost:3000/posts,2,0,0
+1727071277659,3,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,3,3,http://localhost:3000/login,3,0,0
+1727071277663,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,3,3,http://localhost:3000/posts,2,0,0
+1727071277666,3,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,3,3,http://localhost:3000/login,2,0,0
+1727071278147,2,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,4,4,http://localhost:3000/posts,2,0,0
+1727071278148,2,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,4,4,http://localhost:3000/posts,2,0,1
+1727071278149,1,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,4,4,http://localhost:3000/login,1,0,0
+1727071278150,1,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,231,4,4,http://localhost:3000/login,1,0,0
+1727071278152,1,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,4,4,http://localhost:3000/posts,1,0,0
+1727071278153,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,4,4,http://localhost:3000/login,1,0,0
+1727071278162,1,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,4,4,http://localhost:3000/posts,1,0,0
+1727071278164,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,4,4,http://localhost:3000/login,1,0,0
+1727071278646,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,4,4,http://localhost:3000/posts,3,0,0
+1727071278649,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,235,4,4,http://localhost:3000/login,3,0,0
+1727071278650,2,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,4,4,http://localhost:3000/posts,2,0,0
+1727071278652,2,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,240,4,4,http://localhost:3000/login,2,0,0
+1727071278655,2,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,4,4,http://localhost:3000/posts,2,0,0
+1727071278657,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,4,4,http://localhost:3000/login,1,0,0
+1727071278662,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,4,4,http://localhost:3000/posts,3,0,0
+1727071278665,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,4,4,http://localhost:3000/login,2,0,0
+1727071279146,2,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,4,4,http://localhost:3000/posts,2,0,0
+1727071279149,1,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,4,4,http://localhost:3000/login,1,0,0
+1727071279152,1,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,4,4,http://localhost:3000/posts,1,0,0
+1727071279153,1,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,4,4,http://localhost:3000/posts,1,0,0
+1727071279153,1,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,231,4,4,http://localhost:3000/login,1,0,0
+1727071279154,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,4,4,http://localhost:3000/login,1,0,0
+1727071279161,1,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,4,4,http://localhost:3000/posts,1,0,0
+1727071279163,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,4,4,http://localhost:3000/login,1,0,0
+1727071279650,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,4,4,http://localhost:3000/posts,3,0,0
+1727071279651,3,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,4,4,http://localhost:3000/posts,3,0,0
+1727071279651,4,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,4,4,http://localhost:3000/posts,3,0,0
+1727071279653,2,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,4,4,http://localhost:3000/login,2,0,0
+1727071279654,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,240,4,4,http://localhost:3000/login,1,0,0
+1727071279655,1,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,235,4,4,http://localhost:3000/login,1,0,0
+1727071279661,1,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,4,4,http://localhost:3000/posts,1,0,0
+1727071279663,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,231,4,4,http://localhost:3000/login,1,0,0
+1727071280142,3,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,5,5,http://localhost:3000/posts,3,0,1
+1727071280146,1,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,240,5,5,http://localhost:3000/login,1,0,0
+1727071280149,1,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,5,5,http://localhost:3000/posts,1,0,0
+1727071280150,2,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,235,5,5,http://localhost:3000/login,2,0,0
+1727071280153,1,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,5,5,http://localhost:3000/posts,1,0,0
+1727071280154,1,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,5,5,http://localhost:3000/posts,1,0,0
+1727071280154,2,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,231,5,5,http://localhost:3000/login,2,0,0
+1727071280155,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,240,5,5,http://localhost:3000/login,2,0,0
+1727071280159,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,5,5,http://localhost:3000/posts,2,0,0
+1727071280161,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,5,5,http://localhost:3000/login,2,0,0
+1727071280647,3,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,5,5,http://localhost:3000/posts,3,0,0
+1727071280648,2,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,5,5,http://localhost:3000/posts,2,0,0
+1727071280650,1,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,5,5,http://localhost:3000/login,1,0,0
+1727071280650,2,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,235,5,5,http://localhost:3000/login,2,0,0
+1727071280651,2,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,5,5,http://localhost:3000/posts,2,0,0
+1727071280653,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,5,5,http://localhost:3000/login,1,0,0
+1727071280654,1,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,5,5,http://localhost:3000/posts,1,0,0
+1727071280655,2,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,240,5,5,http://localhost:3000/login,1,0,0
+1727071280663,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,5,5,http://localhost:3000/posts,2,0,0
+1727071280665,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,5,5,http://localhost:3000/login,2,0,0
+1727071281147,3,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,5,5,http://localhost:3000/posts,3,0,0
+1727071281147,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,5,5,http://localhost:3000/posts,3,0,0
+1727071281149,2,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,5,5,http://localhost:3000/posts,2,0,0
+1727071281150,1,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,240,5,5,http://localhost:3000/login,1,0,0
+1727071281150,2,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,5,5,http://localhost:3000/login,2,0,0
+1727071281152,1,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,5,5,http://localhost:3000/posts,1,0,0
+1727071281151,1,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,240,5,5,http://localhost:3000/login,1,0,0
+1727071281153,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,5,5,http://localhost:3000/login,1,0,0
+1727071281160,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,5,5,http://localhost:3000/posts,2,0,0
+1727071281162,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,231,5,5,http://localhost:3000/login,2,0,0
+1727071281647,1,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,5,5,http://localhost:3000/posts,1,0,0
+1727071281648,2,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,5,5,http://localhost:3000/posts,2,0,0
+1727071281649,1,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,5,5,http://localhost:3000/posts,1,0,0
+1727071281649,1,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,235,5,5,http://localhost:3000/login,1,0,0
+1727071281650,1,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,231,5,5,http://localhost:3000/login,1,0,0
+1727071281650,1,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,5,5,http://localhost:3000/login,1,0,0
+1727071281656,1,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,5,5,http://localhost:3000/posts,1,0,0
+1727071281657,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,5,5,http://localhost:3000/login,2,0,0
+1727071281659,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,5,5,http://localhost:3000/posts,3,0,0
+1727071281662,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,5,5,http://localhost:3000/login,1,0,0
+1727071282145,2,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,6,6,http://localhost:3000/posts,2,0,0
+1727071282146,2,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,6,6,http://localhost:3000/posts,2,0,0
+1727071282146,3,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,192,6,6,http://localhost:3000/posts,3,0,1
+1727071282148,1,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,6,6,http://localhost:3000/login,1,0,0
+1727071282148,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,6,6,http://localhost:3000/login,3,0,0
+1727071282149,3,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,240,6,6,http://localhost:3000/login,3,0,0
+1727071282150,3,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,6,6,http://localhost:3000/posts,3,0,0
+1727071282153,2,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,235,6,6,http://localhost:3000/login,2,0,0
+1727071282156,2,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,6,6,http://localhost:3000/posts,2,0,0
+1727071282158,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,6,6,http://localhost:3000/login,2,0,0
+1727071282163,1,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,6,6,http://localhost:3000/posts,1,0,0
+1727071282164,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,6,6,http://localhost:3000/login,2,0,0
+1727071282646,3,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,6,6,http://localhost:3000/posts,3,0,0
+1727071282648,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,6,6,http://localhost:3000/posts,3,0,0
+1727071282648,4,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,192,6,6,http://localhost:3000/posts,4,0,0
+1727071282650,3,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,6,6,http://localhost:3000/login,3,0,0
+1727071282652,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,235,6,6,http://localhost:3000/login,3,0,0
+1727071282652,4,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,240,6,6,http://localhost:3000/login,4,0,0
+1727071282652,5,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,6,6,http://localhost:3000/posts,5,0,0
+1727071282653,4,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,6,6,http://localhost:3000/posts,4,0,0
+1727071282657,3,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,6,6,http://localhost:3000/login,3,0,0
+1727071282657,4,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,231,6,6,http://localhost:3000/login,4,0,0
+1727071282663,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,6,6,http://localhost:3000/posts,2,0,0
+1727071282666,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,6,6,http://localhost:3000/login,1,0,0
+1727071283144,4,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,6,6,http://localhost:3000/posts,4,0,0
+1727071283149,4,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,193,6,6,http://localhost:3000/posts,3,0,0
+1727071283149,4,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,6,6,http://localhost:3000/posts,4,0,0
+1727071283149,5,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,6,6,http://localhost:3000/login,5,0,0
+1727071283154,2,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,240,6,6,http://localhost:3000/login,2,0,0
+1727071283154,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,235,6,6,http://localhost:3000/login,3,0,0
+1727071283154,4,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,6,6,http://localhost:3000/posts,4,0,0
+1727071283155,3,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,6,6,http://localhost:3000/posts,3,0,0
+1727071283158,2,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,235,6,6,http://localhost:3000/login,2,0,0
+1727071283158,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,6,6,http://localhost:3000/login,2,0,0
+1727071283163,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,6,6,http://localhost:3000/posts,2,0,0
+1727071283166,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,6,6,http://localhost:3000/login,2,0,0
+1727071283646,2,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,6,6,http://localhost:3000/posts,2,0,0
+1727071283648,2,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,193,6,6,http://localhost:3000/posts,2,0,0
+1727071283648,2,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,6,6,http://localhost:3000/posts,2,0,0
+1727071283649,2,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,6,6,http://localhost:3000/login,2,0,0
+1727071283650,2,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,235,6,6,http://localhost:3000/login,2,0,0
+1727071283651,1,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,6,6,http://localhost:3000/login,1,0,0
+1727071283652,2,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,6,6,http://localhost:3000/posts,2,0,0
+1727071283653,1,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,6,6,http://localhost:3000/posts,1,0,0
+1727071283654,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,6,6,http://localhost:3000/login,1,0,0
+1727071283654,1,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,235,6,6,http://localhost:3000/login,1,0,0
+1727071283661,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,6,6,http://localhost:3000/posts,2,0,0
+1727071283663,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,6,6,http://localhost:3000/login,1,0,0
+1727071284146,3,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,7,7,http://localhost:3000/posts,3,0,0
+1727071284146,3,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,192,7,7,http://localhost:3000/posts,3,0,0
+1727071284147,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,7,7,http://localhost:3000/posts,3,0,0
+1727071284147,3,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,193,7,7,http://localhost:3000/posts,3,0,1
+1727071284150,2,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,7,7,http://localhost:3000/login,2,0,0
+1727071284150,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,7,7,http://localhost:3000/login,3,0,0
+1727071284150,3,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,235,7,7,http://localhost:3000/login,3,0,0
+1727071284151,2,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,231,7,7,http://localhost:3000/login,2,0,0
+1727071284152,1,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,7,7,http://localhost:3000/posts,1,0,0
+1727071284154,1,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,235,7,7,http://localhost:3000/login,1,0,0
+1727071284155,1,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,7,7,http://localhost:3000/posts,1,0,0
+1727071284156,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,7,7,http://localhost:3000/login,1,0,0
+1727071284163,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,7,7,http://localhost:3000/posts,2,0,0
+1727071284165,3,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,7,7,http://localhost:3000/login,3,0,0
+1727071284647,4,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,193,7,7,http://localhost:3000/posts,4,0,0
+1727071284647,5,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,7,7,http://localhost:3000/posts,5,0,0
+1727071284647,6,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,193,7,7,http://localhost:3000/posts,6,0,0
+1727071284648,7,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,7,7,http://localhost:3000/posts,7,0,0
+1727071284652,6,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,235,7,7,http://localhost:3000/login,6,0,0
+1727071284653,5,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,235,7,7,http://localhost:3000/login,5,0,0
+1727071284653,6,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,231,7,7,http://localhost:3000/login,6,0,0
+1727071284653,7,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,7,7,http://localhost:3000/posts,7,0,0
+1727071284654,7,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,7,7,http://localhost:3000/posts,7,0,0
+1727071284656,6,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,7,7,http://localhost:3000/login,6,0,0
+1727071284661,5,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,240,7,7,http://localhost:3000/login,5,0,0
+1727071284661,6,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,7,7,http://localhost:3000/login,6,0,0
+1727071284665,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,7,7,http://localhost:3000/posts,2,0,0
+1727071284668,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,7,7,http://localhost:3000/login,2,0,0
+1727071285146,3,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,7,7,http://localhost:3000/posts,3,0,0
+1727071285146,3,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,193,7,7,http://localhost:3000/posts,3,0,0
+1727071285148,2,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,192,7,7,http://localhost:3000/posts,2,0,0
+1727071285148,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,7,7,http://localhost:3000/posts,3,0,0
+1727071285149,4,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,240,7,7,http://localhost:3000/login,4,0,0
+1727071285150,4,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,235,7,7,http://localhost:3000/login,4,0,0
+1727071285151,4,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,231,7,7,http://localhost:3000/login,4,0,0
+1727071285152,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,7,7,http://localhost:3000/login,3,0,0
+1727071285152,4,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,7,7,http://localhost:3000/posts,4,0,0
+1727071285155,2,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,7,7,http://localhost:3000/posts,2,0,0
+1727071285156,2,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,231,7,7,http://localhost:3000/login,2,0,0
+1727071285158,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,7,7,http://localhost:3000/login,1,0,0
+1727071285162,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,7,7,http://localhost:3000/posts,3,0,0
+1727071285165,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,7,7,http://localhost:3000/login,2,0,0
+1727071285647,4,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,7,7,http://localhost:3000/posts,4,0,0
+1727071285647,4,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,192,7,7,http://localhost:3000/posts,4,0,0
+1727071285650,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,7,7,http://localhost:3000/posts,3,0,0
+1727071285651,3,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,7,7,http://localhost:3000/posts,3,0,0
+1727071285651,4,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,192,7,7,http://localhost:3000/posts,4,0,0
+1727071285652,4,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,235,7,7,http://localhost:3000/login,4,0,0
+1727071285652,5,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,7,7,http://localhost:3000/login,5,0,0
+1727071285653,5,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,7,7,http://localhost:3000/posts,5,0,0
+1727071285653,5,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,7,7,http://localhost:3000/login,5,0,0
+1727071285654,6,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,240,7,7,http://localhost:3000/login,6,0,0
+1727071285655,6,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,240,7,7,http://localhost:3000/login,6,0,0
+1727071285658,6,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,235,7,7,http://localhost:3000/login,6,0,0
+1727071285663,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,7,7,http://localhost:3000/posts,2,0,0
+1727071285666,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,231,7,7,http://localhost:3000/login,1,0,0
+1727071286147,2,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,8,8,http://localhost:3000/posts,2,0,0
+1727071286146,4,Kilogram posts,200,OK,Kilogram thread group 1-8,text,true,,823,193,8,8,http://localhost:3000/posts,4,0,1
+1727071286148,2,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,8,8,http://localhost:3000/posts,2,0,0
+1727071286148,2,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,193,8,8,http://localhost:3000/posts,2,0,0
+1727071286149,2,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,240,8,8,http://localhost:3000/login,2,0,0
+1727071286149,3,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,193,8,8,http://localhost:3000/posts,3,0,0
+1727071286150,3,Login,401,Unauthorized,Kilogram thread group 1-8,text,false,,372,240,8,8,http://localhost:3000/login,2,0,0
+1727071286150,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,8,8,http://localhost:3000/login,3,0,0
+1727071286150,3,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,240,8,8,http://localhost:3000/login,3,0,0
+1727071286152,3,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,235,8,8,http://localhost:3000/login,2,0,0
+1727071286153,2,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,8,8,http://localhost:3000/posts,2,0,0
+1727071286155,1,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,8,8,http://localhost:3000/posts,1,0,0
+1727071286155,1,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,231,8,8,http://localhost:3000/login,1,0,0
+1727071286156,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,8,8,http://localhost:3000/login,1,0,0
+1727071286160,1,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,8,8,http://localhost:3000/posts,1,0,0
+1727071286161,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,8,8,http://localhost:3000/login,2,0,0
+1727071286647,3,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,8,8,http://localhost:3000/posts,2,0,0
+1727071286648,2,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,8,8,http://localhost:3000/posts,2,0,0
+1727071286648,3,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,192,8,8,http://localhost:3000/posts,3,0,0
+1727071286650,1,Kilogram posts,200,OK,Kilogram thread group 1-8,text,true,,823,192,8,8,http://localhost:3000/posts,1,0,0
+1727071286650,1,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,192,8,8,http://localhost:3000/posts,1,0,0
+1727071286650,3,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,8,8,http://localhost:3000/login,3,0,0
+1727071286650,4,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,8,8,http://localhost:3000/login,4,0,0
+1727071286651,3,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,235,8,8,http://localhost:3000/login,3,0,0
+1727071286651,4,Login,401,Unauthorized,Kilogram thread group 1-8,text,false,,372,235,8,8,http://localhost:3000/login,4,0,0
+1727071286652,4,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,231,8,8,http://localhost:3000/login,4,0,0
+1727071286652,4,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,8,8,http://localhost:3000/posts,4,0,0
+1727071286655,2,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,8,8,http://localhost:3000/posts,2,0,0
+1727071286656,2,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,240,8,8,http://localhost:3000/login,2,0,0
+1727071286657,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,8,8,http://localhost:3000/login,1,0,0
+1727071286660,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,8,8,http://localhost:3000/posts,3,0,0
+1727071286663,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,8,8,http://localhost:3000/login,2,0,0
+1727071287148,5,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,193,8,8,http://localhost:3000/posts,5,0,0
+1727071287148,5,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,8,8,http://localhost:3000/posts,5,0,0
+1727071287148,5,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,8,8,http://localhost:3000/posts,5,0,0
+1727071287150,5,Kilogram posts,200,OK,Kilogram thread group 1-8,text,true,,823,193,8,8,http://localhost:3000/posts,5,0,0
+1727071287151,4,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,8,8,http://localhost:3000/posts,4,0,0
+1727071287152,4,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,193,8,8,http://localhost:3000/posts,4,0,0
+1727071287152,5,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,8,8,http://localhost:3000/posts,5,0,0
+1727071287153,5,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,240,8,8,http://localhost:3000/login,5,0,0
+1727071287153,5,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,8,8,http://localhost:3000/login,5,0,0
+1727071287153,6,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,235,8,8,http://localhost:3000/login,6,0,0
+1727071287155,5,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,240,8,8,http://localhost:3000/login,5,0,0
+1727071287155,7,Login,401,Unauthorized,Kilogram thread group 1-8,text,false,,372,240,8,8,http://localhost:3000/login,7,0,0
+1727071287156,7,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,231,8,8,http://localhost:3000/login,7,0,0
+1727071287157,8,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,235,8,8,http://localhost:3000/login,8,0,0
+1727071287163,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,8,8,http://localhost:3000/posts,3,0,0
+1727071287166,4,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,231,8,8,http://localhost:3000/login,4,0,0
+1727071287648,4,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,8,8,http://localhost:3000/posts,4,0,0
+1727071287648,5,Kilogram posts,200,OK,Kilogram thread group 1-8,text,true,,823,192,8,8,http://localhost:3000/posts,5,0,0
+1727071287650,4,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,8,8,http://localhost:3000/posts,4,0,0
+1727071287651,3,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,193,8,8,http://localhost:3000/posts,3,0,0
+1727071287652,3,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,192,8,8,http://localhost:3000/posts,3,0,0
+1727071287652,4,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,8,8,http://localhost:3000/posts,4,0,0
+1727071287652,5,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,8,8,http://localhost:3000/posts,5,0,0
+1727071287653,4,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,235,8,8,http://localhost:3000/login,4,0,0
+1727071287653,6,Login,401,Unauthorized,Kilogram thread group 1-8,text,false,,372,240,8,8,http://localhost:3000/login,6,0,0
+1727071287654,5,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,8,8,http://localhost:3000/login,5,0,0
+1727071287655,4,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,231,8,8,http://localhost:3000/login,4,0,0
+1727071287656,4,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,231,8,8,http://localhost:3000/login,4,0,0
+1727071287656,5,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,235,8,8,http://localhost:3000/login,5,0,0
+1727071287657,6,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,8,8,http://localhost:3000/login,6,0,0
+1727071287664,4,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,8,8,http://localhost:3000/posts,4,0,0
+1727071287669,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,8,8,http://localhost:3000/login,1,0,0
+1727071288147,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,9,9,http://localhost:3000/posts,3,0,0
+1727071288147,4,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,9,9,http://localhost:3000/posts,4,0,0
+1727071288147,5,Kilogram posts,200,OK,Kilogram thread group 1-8,text,true,,823,192,9,9,http://localhost:3000/posts,5,0,0
+1727071288148,5,Kilogram posts,200,OK,Kilogram thread group 1-9,text,true,,823,193,9,9,http://localhost:3000/posts,5,0,1
+1727071288150,4,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,9,9,http://localhost:3000/login,4,0,0
+1727071288151,3,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,9,9,http://localhost:3000/login,3,0,0
+1727071288152,3,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,192,9,9,http://localhost:3000/posts,3,0,0
+1727071288152,4,Login,401,Unauthorized,Kilogram thread group 1-8,text,false,,372,235,9,9,http://localhost:3000/login,4,0,0
+1727071288152,4,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,192,9,9,http://localhost:3000/posts,4,0,0
+1727071288153,4,Login,401,Unauthorized,Kilogram thread group 1-9,text,false,,372,240,9,9,http://localhost:3000/login,4,0,0
+1727071288154,3,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,9,9,http://localhost:3000/posts,3,0,0
+1727071288155,4,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,231,9,9,http://localhost:3000/login,4,0,0
+1727071288156,3,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,235,9,9,http://localhost:3000/login,3,0,0
+1727071288157,2,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,240,9,9,http://localhost:3000/login,2,0,0
+1727071288155,4,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,9,9,http://localhost:3000/posts,4,0,0
+1727071288160,1,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,231,9,9,http://localhost:3000/login,1,0,0
+1727071288164,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,9,9,http://localhost:3000/posts,3,0,0
+1727071288167,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,235,9,9,http://localhost:3000/login,2,0,0
+1727071288647,4,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,9,9,http://localhost:3000/posts,4,0,0
+1727071288649,2,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,193,9,9,http://localhost:3000/posts,2,0,0
+1727071288649,2,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,193,9,9,http://localhost:3000/posts,2,0,0
+1727071288649,3,Kilogram posts,200,OK,Kilogram thread group 1-9,text,true,,823,193,9,9,http://localhost:3000/posts,3,0,0
+1727071288649,4,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,9,9,http://localhost:3000/posts,4,0,0
+1727071288650,3,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,9,9,http://localhost:3000/posts,3,0,0
+1727071288651,3,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,235,9,9,http://localhost:3000/login,3,0,0
+1727071288651,3,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,240,9,9,http://localhost:3000/login,3,0,0
+1727071288651,4,Kilogram posts,200,OK,Kilogram thread group 1-8,text,true,,823,193,9,9,http://localhost:3000/posts,4,0,0
+1727071288651,4,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,192,9,9,http://localhost:3000/posts,4,0,0
+1727071288652,3,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,235,9,9,http://localhost:3000/login,3,0,0
+1727071288653,3,Login,401,Unauthorized,Kilogram thread group 1-9,text,false,,372,231,9,9,http://localhost:3000/login,3,0,0
+1727071288653,3,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,231,9,9,http://localhost:3000/login,3,0,0
+1727071288654,2,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,231,9,9,http://localhost:3000/login,2,0,0
+1727071288655,2,Login,401,Unauthorized,Kilogram thread group 1-8,text,false,,372,240,9,9,http://localhost:3000/login,2,0,0
+1727071288655,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,9,9,http://localhost:3000/login,2,0,0
+1727071288664,2,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,192,9,9,http://localhost:3000/posts,2,0,0
+1727071288666,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,9,9,http://localhost:3000/login,2,0,0
+1727071289148,3,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,192,9,9,http://localhost:3000/posts,2,0,0
+1727071289149,5,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,192,9,9,http://localhost:3000/posts,5,0,0
+1727071289151,3,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,192,9,9,http://localhost:3000/posts,3,0,0
+1727071289151,4,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,9,9,http://localhost:3000/login,4,0,0
+1727071289151,5,Kilogram posts,200,OK,Kilogram thread group 1-9,text,true,,823,192,9,9,http://localhost:3000/posts,5,0,0
+1727071289152,4,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,192,9,9,http://localhost:3000/posts,4,0,0
+1727071289153,4,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,192,9,9,http://localhost:3000/posts,4,0,0
+1727071289153,5,Kilogram posts,200,OK,Kilogram thread group 1-8,text,true,,823,192,9,9,http://localhost:3000/posts,5,0,0
+1727071289154,5,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,235,9,9,http://localhost:3000/login,5,0,0
+1727071289155,4,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,235,9,9,http://localhost:3000/login,4,0,0
+1727071289156,4,Login,401,Unauthorized,Kilogram thread group 1-9,text,false,,372,231,9,9,http://localhost:3000/login,4,0,0
+1727071289157,3,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,9,9,http://localhost:3000/posts,3,0,0
+1727071289157,4,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,240,9,9,http://localhost:3000/login,4,0,0
+1727071289158,4,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,240,9,9,http://localhost:3000/login,4,0,0
+1727071289158,6,Login,401,Unauthorized,Kilogram thread group 1-8,text,false,,372,231,9,9,http://localhost:3000/login,6,0,0
+1727071289161,4,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,9,9,http://localhost:3000/login,4,0,0
+1727071289164,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,9,9,http://localhost:3000/posts,3,0,0
+1727071289167,2,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,9,9,http://localhost:3000/login,2,0,0
+1727071289647,5,Kilogram posts,200,OK,Kilogram thread group 1-3,text,true,,823,193,9,9,http://localhost:3000/posts,5,0,0
+1727071289647,6,Kilogram posts,200,OK,Kilogram thread group 1-5,text,true,,823,193,9,9,http://localhost:3000/posts,6,0,0
+1727071289647,7,Kilogram posts,200,OK,Kilogram thread group 1-6,text,true,,823,193,9,9,http://localhost:3000/posts,7,0,0
+1727071289649,6,Kilogram posts,200,OK,Kilogram thread group 1-8,text,true,,823,193,9,9,http://localhost:3000/posts,6,0,0
+1727071289650,6,Kilogram posts,200,OK,Kilogram thread group 1-7,text,true,,823,193,9,9,http://localhost:3000/posts,6,0,0
+1727071289651,5,Kilogram posts,200,OK,Kilogram thread group 1-9,text,true,,823,193,9,9,http://localhost:3000/posts,5,0,0
+1727071289651,7,Kilogram posts,200,OK,Kilogram thread group 1-4,text,true,,823,193,9,9,http://localhost:3000/posts,7,0,0
+1727071289653,6,Login,401,Unauthorized,Kilogram thread group 1-3,text,false,,372,240,9,9,http://localhost:3000/login,6,0,0
+1727071289653,8,Login,401,Unauthorized,Kilogram thread group 1-5,text,false,,372,231,9,9,http://localhost:3000/login,8,0,0
+1727071289654,9,Login,401,Unauthorized,Kilogram thread group 1-6,text,false,,372,235,9,9,http://localhost:3000/login,9,0,0
+1727071289655,8,Login,401,Unauthorized,Kilogram thread group 1-8,text,false,,372,231,9,9,http://localhost:3000/login,8,0,0
+1727071289656,8,Login,401,Unauthorized,Kilogram thread group 1-7,text,false,,372,235,9,9,http://localhost:3000/login,8,0,0
+1727071289657,7,Login,401,Unauthorized,Kilogram thread group 1-9,text,false,,372,231,9,9,http://localhost:3000/login,7,0,0
+1727071289657,8,Kilogram posts,200,OK,Kilogram thread group 1-2,text,true,,823,193,9,9,http://localhost:3000/posts,8,0,0
+1727071289659,7,Login,401,Unauthorized,Kilogram thread group 1-4,text,false,,372,240,9,9,http://localhost:3000/login,7,0,0
+1727071289663,3,Kilogram posts,200,OK,Kilogram thread group 1-1,text,true,,823,193,9,9,http://localhost:3000/posts,3,0,0
+1727071289665,2,Login,401,Unauthorized,Kilogram thread group 1-2,text,false,,372,235,9,9,http://localhost:3000/login,2,0,0
+1727071289667,1,Login,401,Unauthorized,Kilogram thread group 1-1,text,false,,372,240,9,9,http://localhost:3000/login,1,0,0

@@ -1,0 +1,58 @@
+# this tutorial can be very possibly different (depends on the gitlab version), current version is 16.2.3-ee.0
+# please use VM with 8GB of RAM and open port for HTTP (80) and HTTPS (443)
+
+sudo apt-get update
+sudo apt-get install -y curl openssh-server ca-certificates tzdata perl
+sudo apt-get install -y postfix
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+sudo EXTERNAL_URL="http://{your ip address}" apt-get install gitlab-ee
+
+# take the root password from /etc/gitlab/initial_root_password
+sudo cat /etc/gitlab/initial_root_password
+
+# login with root username and password you've taken
+# reset the password
+# create a new user from the main page (add people)
+# edit the user you've created
+# set the password and password confirmation
+# click save changes
+# log out from current user (root)
+# log in with the username and password you've set
+# reset the password
+
+# create new project
+# choose blank project
+# give project name: gitlab-demo
+# add ssh keys: ssh-keygen -t rsa -b 4096
+# copy the content of ~/.ssh/id_rsa.pub to clipboard
+# go to preferences > SSH keys
+# click add new key
+# paste the content of id_rsa.pub to the key field
+# fill the title as you want
+# usage type: authentication & signing
+# click add key
+
+# go to your git client in your local computer
+# clone a repository with http of the project you've created. ex: http://34.67.119.186/developer1/gitlab-demo.git
+# add a new file in the repo
+# push to gitlab
+# see if there is your file in gitlab web UI
+
+# go to groups in the left menu bar
+# click new group
+# click create group
+# fill the group name
+# role > software engineer
+# what will you use this group for? > learn basic of git
+# click create group
+
+# now we need to move the project to the newly created group
+# go to project > click three dots menu in top right > project setting
+# advanced > expand
+# in transfer project section, choose the new namespace to newly created group
+# click transfer project
+
+# in this group, create a new subgroup, click new subgroup button
+# fill the name of the subgroup
+# click create subgroup
+# move the project ot the newly created subgroup
