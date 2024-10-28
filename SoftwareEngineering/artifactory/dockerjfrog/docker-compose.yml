@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: artifactory
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: artifactorydb
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  artifactory:
+    image: releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+    container_name: artifactory
+    volumes: 
+      - /Users/mj/jfrog/artifactory/var:/var/opt/jfrog/artifactory
+    ports:
+      - "8081:8081"
+      - "8082:8082"
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
