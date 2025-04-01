@@ -1,0 +1,8 @@
+name,department,salary
+charlie,marketing,1000.0
+drake,hr,2000.0
+alice,IT,3000.0
+gilbert,IT,4000.0
+bob,finance,5000.0
+elon,,100000.0
+frank,ob,
